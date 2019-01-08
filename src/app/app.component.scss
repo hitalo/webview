@@ -4,16 +4,20 @@
 }
 
 .first-row {
-    height: 95%;
+    min-height: 95%;
 }
 
 
 .sidebar {
+    // background: #cccccc;
     padding: 0px;
+    border-right-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
 }
 
 .content {
-    background: #666666;
+    // background: #666666;
 }
 
 .second-row {
