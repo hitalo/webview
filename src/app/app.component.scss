@@ -1,26 +1,12 @@
-.container-fluid {
-     display:table;
-     width: 100%;
-     margin-top: -50px;
-     padding: 50px 0 0 0; /*set left/right padding according to needs*/
-     box-sizing: border-box;
-}
 
 .webview {
     height: 100%;
 }
 
 .first-row {
-    height: 100%;
-    display: table-row;
-    display:table;
-    width: 100%;
+    height: 95%;
 }
 
-.first-row .no-float {
-  display: table-cell;
-  float: none;
-}
 
 .sidebar {
     padding: 0px;
@@ -30,7 +16,10 @@
     background: #666666;
 }
 
+.second-row {
+    height: 5%;
+}
+
 .footer {
-    display: table-row;
     background: #00aa00;
 }
