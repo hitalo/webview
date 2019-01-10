@@ -4,8 +4,8 @@
     background-color: $primary;
 }
 
-.navbar-options a {
-    color: $text-color;
+.nav-link, .navbar-brand {
+    color: $text-color !important;
 }
 
 .dropdown-menu {
