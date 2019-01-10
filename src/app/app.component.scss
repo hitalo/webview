@@ -10,16 +10,17 @@
 
 
 .sidebar {
-    // background: #cccccc;
+    background: #ffffff;
     padding: 0px;
     border-right-style: solid;
     border-color: #cccccc;
     border-width: 1px;
 }
 
-// .content {
-//     // background: #666666;
-// }
+.content {
+    width: 100%;
+    margin: auto;
+}
 
 .second-row {
     height: 5%;
@@ -28,4 +29,24 @@
 .footer {
     background: $primary;
     color: $text-color;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        min-width: 150px;
+        z-index: 99;
+        position: absolute;
+        // margin-top: 60px;
+    }
+
+    // .content {
+    //     margin-top: 60px;
+    // }
+
+    // #navbar {
+    //     position: fixed;
+    //     width: 100%;
+    //     z-index: 99;
+    //     margin-bottom: 5px;
+    // }
 }
