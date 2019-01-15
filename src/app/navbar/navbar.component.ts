@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../services/layout-service/layout.service';
 
 @Component({
   selector: 'navbar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private layoutService: LayoutService) { }
 
   ngOnInit() {
   }
 
+
+  toogleSideBar() {
+    this.layoutService.toogleSideBar();
+  }
 }

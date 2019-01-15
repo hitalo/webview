@@ -4,7 +4,7 @@
 <div class="container-fluid webview">
 
   <div class="row first-row">
-    <div id="sideBar" class="col-2 sidebar collapse">
+    <div id="sideBar" class="col-2 sidebar" [ngClass]="active ? 'active' : 'not-active'">
       <sidebar></sidebar>
     </div>
 
