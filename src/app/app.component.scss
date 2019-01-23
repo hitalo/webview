@@ -1,13 +1,12 @@
 @import '../variables.scss';
 
 .webview {
-    height: 93%;
+    height: 95%;
 }
 
 .first-row {
     min-height: 95%;
 }
-
 
 .sidebar {
     background: #ffffff;
@@ -15,12 +14,13 @@
     border-right-style: solid;
     border-color: #cccccc;
     border-width: 1px;
-    max-width: 200px;
+    max-width: 165px;
+    // min-width: 165px;
+    height: inherit;
     transition: all 0.3s;
 }
 
 .content {
-    width: 100%;
     margin: auto;
 }
 
@@ -31,6 +31,7 @@
 .footer {
     background: $primary;
     color: $text-color;
+    margin-bottom: 0px;
 }
 
 .active {
@@ -38,16 +39,25 @@
 }
 
 .not-active {
-    margin-left: -200px;
+    margin-left: -165px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .sidebar {
-        min-width: 200px;
+        min-width: 165px;
         z-index: 99;
         position: absolute;
+        height: 95vh;
         // margin-top: 60px;
     }
+
+    .webview {
+        overflow: auto;
+    }
+
+    // .first-row {
+    //     position: relative;
+    // }
 
     // .content {
     //     margin-top: 60px;
