@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CardsComponent } from './cards/cards.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CorouselComponent } from './corousel/corousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     CardsComponent,
-    NavbarComponent
+    NavbarComponent,
+    CorouselComponent
   ],
   imports: [
     BrowserModule,
