@@ -1,0 +1,16 @@
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Tabs</a>
+    </li>
+    <li class="nav-item">
+      <!-- alternative way -->
+      <a class="nav-link" [ngClass]="{'active': id==='1'}" [routerLink]="['/sample-tab', 'carousel']" (click)="setID('1')">Carousel</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [ngClass]="{'active': id==='2'}" (click)="setIDandRoute('2')">Cards</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
