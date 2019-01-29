@@ -21,7 +21,7 @@ export class SampletabComponent implements OnInit {
 
   setIDandRoute(id: string) {
     this.id = id;
-    this.router.navigate(['/sample-tab', 'cards']);
+    this.router.navigate(['/u', 'sample-tab', 'cards']);
   }
 
 }

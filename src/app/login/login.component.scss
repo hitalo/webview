@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.out-box {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+}
+
+.middle-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner-box {
+    margin-left: auto;
+    margin-right: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #000068;
+    border-radius: 10%;
+    max-width: 500px;
+    padding: 30px;
+}
