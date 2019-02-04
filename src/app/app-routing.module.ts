@@ -5,6 +5,7 @@ import { CorouselComponent } from './corousel/corousel.component';
 import { SampletabComponent } from './sampletab/sampletab.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guards/auth-guard.service';
+import { SampleformComponent } from './sampleform/sampleform.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
     children: [
       { path: 'cards', component: CardsComponent },
       { path: 'carousel', component: CorouselComponent },
+      { path: 'sample-form', component: SampleformComponent },
       {
         path: 'sample-tab', component: SampletabComponent,
         children: [

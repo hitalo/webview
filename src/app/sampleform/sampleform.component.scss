@@ -1,0 +1,15 @@
+
+.form-wrappler {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    // border-top-style: solid;
+    // border-bottom-style: solid;
+    // border-color: #000068;
+    // border-width: 1px;
+}
+
+.required-field::after {
+    content: " *";
+    color: red;
+}

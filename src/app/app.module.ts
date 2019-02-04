@@ -10,6 +10,8 @@ import { CorouselComponent } from './corousel/corousel.component';
 import { SampletabComponent } from './sampletab/sampletab.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
+import { SampleformComponent } from './sampleform/sampleform.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { FooterComponent } from './footer/footer.component';
     CorouselComponent,
     SampletabComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    SampleformComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
