@@ -15,6 +15,7 @@
         <div class="invalid-tooltip" *ngIf="pass.invalid">
           <div *ngIf="pass.errors?.required">Password is required</div>
           <div *ngIf="pass.errors?.minlength">Min {{ minPassLength }} characters</div>
+          <div *ngIf="pass.errors.pattern">Password must have at least one lowcase, one uppercase, one number and one symbol</div>
         </div>
       </div>
     </div>
@@ -51,6 +52,6 @@
         </label>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" class="btn btn-primary" [disabled]="formData.invalid">Submit</button>
   </form>
 </div>

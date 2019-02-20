@@ -17,21 +17,14 @@ export class SampleformComponent implements OnInit {
 
     this.formData = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
-      pass: new FormControl('', [Validators.required, Validators.minLength(this.minPassLength)])
+      pass: new FormControl('', [Validators.required, Validators.minLength(this.minPassLength),
+        Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[.$@$!%*?&])[A-Za-z\d$@$!%*?&].{'+ this.minPassLength +',}')])
    }); 
 
   }
 
   submitForm() {
-    console.log("submit");
-    if(this.formData.invalid) {
-      
-      console.log("email invalid", this.email.invalid);
-      console.log("email required", this.email.errors.required);
-      console.log("pass min length", this.pass.errors.minlength);
-
-    }
-    
+    console.log(this.formData.value);
   }
 
   get email() { return this.formData.get('email'); }
