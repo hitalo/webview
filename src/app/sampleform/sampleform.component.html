@@ -46,8 +46,11 @@
     </div>
     <div class="form-group">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
+        <input class="form-check-input" type="checkbox" id="gridCheck" [ngClass]="{'is-invalid': check?.touched && check?.invalid}" formControlName="check">
+        <div class="invalid-tooltip" *ngIf="check.invalid">
+          <div *ngIf="check.errors?.required">Must check</div>
+        </div>
+        <label class="form-check-label required-field" for="gridCheck">
           Check me out
         </label>
       </div>
