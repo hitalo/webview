@@ -14,6 +14,10 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { SampleformComponent } from './sampleform/sampleform.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { BlobImageComponent } from './blob-image/blob-image.component';
+import { InputDialogComponent } from './dialogs/input-dialog/input-dialog.component';
+import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 
 @NgModule({
   declarations: [
@@ -25,13 +29,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     SampletabComponent,
     LoginComponent,
     FooterComponent,
-    SampleformComponent
+    SampleformComponent,
+    BlobImageComponent,
+    InputDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    HttpModule,
+    BootstrapModalModule.forRoot({container:document.body})
+  ],
+  entryComponents: [
+    InputDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

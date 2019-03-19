@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class SampletabComponent implements OnInit {
 
-  id: string = '0';
+  id: string = '0';  
 
   constructor(private router: Router) { }
 

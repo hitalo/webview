@@ -1,0 +1,6 @@
+<div class="wrapper">
+    <button type="button" class="btn btn-primary" (click)="openDialog()">New Image</button>
+    <a type="button" class="btn btn-primary" [ngClass]="{'disabled' : imgURL == undefined || imgURL === '' }" href="{{ imgURL }}" download>Download</a>
+    <label class="warning">ATTENTION: Only free images are displayed</label><br>
+    <img class="imgContent" *ngIf="imageData" [src]="imageData" />
+</div>

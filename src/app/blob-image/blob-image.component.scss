@@ -1,0 +1,15 @@
+.wrapper {
+    margin: 10px;
+}
+
+.wrapper > * {
+    margin: 10px;
+}
+
+.warning {
+    color: red;
+}
+
+.imgContent {
+    max-width: 100%;
+}
