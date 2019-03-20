@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {NgxMaskModule} from 'ngx-mask';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +20,7 @@ import { HttpModule } from '@angular/http';
 import { BlobImageComponent } from './blob-image/blob-image.component';
 import { InputDialogComponent } from './dialogs/input-dialog/input-dialog.component';
 import { BootstrapModalModule } from 'ng2-bootstrap-modal';
+import { MsgDialogComponent } from './dialogs/msg-dialog/msg-dialog.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import { BootstrapModalModule } from 'ng2-bootstrap-modal';
     FooterComponent,
     SampleformComponent,
     BlobImageComponent,
-    InputDialogComponent
+    InputDialogComponent,
+    MsgDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -39,10 +43,13 @@ import { BootstrapModalModule } from 'ng2-bootstrap-modal';
     ReactiveFormsModule,
     NgxMaskModule.forRoot(),
     HttpModule,
-    BootstrapModalModule.forRoot({container:document.body})
+    BootstrapModalModule.forRoot({container:document.body}),
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   entryComponents: [
-    InputDialogComponent
+    InputDialogComponent,
+    MsgDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

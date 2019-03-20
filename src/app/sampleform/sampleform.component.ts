@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-sampleform',
@@ -12,7 +13,7 @@ export class SampleformComponent implements OnInit {
   private minPassLength: number = 6;
   private states: string[] = ['RN', 'CE', 'PB', 'PE'];
 
-  constructor() {}
+  constructor(private toastr: ToastrService) {}
 
   ngOnInit() {
 
@@ -29,6 +30,10 @@ export class SampleformComponent implements OnInit {
   submitForm() {
     console.log(this.formData.value);
     console.log(this.check.errors);
+  }
+
+  showToast() {
+    this.toastr.success('Dracarys', 'Toast fun');
   }
 
   get email() { return this.formData.get('email'); }

@@ -43,6 +43,8 @@ export class BlobImageComponent implements OnInit {
           urlCreator.createObjectURL(blob)
         ); 
          
+    }).catch(err => {
+      this.dialogService.showMsgDialog('ERROR', 'Can not display URL');
     });
   }
 
