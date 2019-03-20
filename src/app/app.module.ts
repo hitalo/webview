@@ -21,6 +21,7 @@ import { BlobImageComponent } from './blob-image/blob-image.component';
 import { InputDialogComponent } from './dialogs/input-dialog/input-dialog.component';
 import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 import { MsgDialogComponent } from './dialogs/msg-dialog/msg-dialog.component';
+import { FileComponent } from './file/file.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MsgDialogComponent } from './dialogs/msg-dialog/msg-dialog.component';
     SampleformComponent,
     BlobImageComponent,
     InputDialogComponent,
-    MsgDialogComponent
+    MsgDialogComponent,
+    FileComponent
   ],
   imports: [
     BrowserModule,
